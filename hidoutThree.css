@@ -1,73 +1,52 @@
+* {
+  border: 0px solid blue;
+}
+
 
 body {
   margin: 0 auto;
+  width: 100%;
+  height: 1080px;
+  background: radial-gradient(#EAE3AC, #C9C272, #E9E6B9);
+
 }
 
+
+/* entire left borders with logo */
 .mainBox {
-  margin: 0 auto;
-display: block;
+  display: inline-block;
+  margin-top: 0.5%;
+  position: relative;
+  height: 1080px;
+  width: 20%;
+  border: 0px solid black;
+  overflow: hidden;
+
 }
 
 .leftBorder {
-  float: left;
-  height: 824px;
-  width: 2.5%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-left: 1%;
+  display: inline-block;
+  height: 100%;
+  width: 25%;
   background-color: #181009;
   filter: brightness(66%);
+  border-radius: 5px;
 
 
 }
 
 .leftBorderTwo {
-  float: left;
+  float: right;
 
-  height: 824px;
-  width: 22%;
+  height: 100%;
+  width: 72%;
   background-color: #000000;
+  border-radius: 5px;
 
-}
-
-.imgDiv {
-  background-image: url(http://www.hideouttheatre.com/wp-content/uploads/2009/06/DSC01445-1024x685.jpg);
-  float: left;
-  height: 440px;
-  width: 73%;
-  background-size: length 370px;
-}
-
-.textDiv {
-  float: left;
-  height: 378px;
-  width: 73%;
-  background-color: white;
-
-
-}
-
-.rightBorder {
-  margin-top: -450px;
-  float: left;
-  height: 828px;
-  width: 2.5%;
-  background-color: #181009;
-  filter: brightness(99%);
-
-}
-
-.imagecoff {
-
-height: 340px;
-
-}
-
-.htwo {
-  text-align: center;
-  padding-bottom: 20%;
-  font-size: 40px;
-  float: left;
-  height: 150px;
-  width: 60%;
-  margin-top: -2px;
 
 }
 
@@ -76,6 +55,7 @@ height: 340px;
   margin-left: 6%;
   margin-top: 15%;
   clear: both;
+
 
   height: 330px;
   width:86%;
@@ -86,6 +66,12 @@ height: 340px;
   max-height: 100%;
   filter: invert(100%);
 
+
+}
+.btn-group {
+  margin-left: 15%;
+  margin-top: 10%;
+
 }
 
 .btn-group button {
@@ -94,15 +80,87 @@ height: 340px;
     color: white; /* White text */
     padding: 10px 24px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
-    width: 50%; /* Set a width if needed */
+    width: 75%; /* Set a width if needed */
     display: block; /* Make the buttons appear below each other */
+
 }
 
 .btn-group button:not(:last-child) {
     border-bottom: none; /* Prevent double borders */
+
 }
 
 /* Add a background color on hover */
 .btn-group button:hover {
     background-color: #3e8e41;
+}
+
+
+/* title bar and div across top of screen */
+.titlebar {
+  position: fixed;
+  margin-top: 0.5%;
+  margin-left: 21%;
+  height: 100px;
+  width: 78%;
+  background-color: black;
+
+  border-radius: 5px;
+}
+
+.title {
+  margin-left: 10%;
+  margin-top: 3%;
+  font-family: "DroidSerif";
+  font-size: 40px;
+  color: white;
+}
+
+
+.contentbox {
+  margin-left: 21%;
+  margin-top: -51%;
+  width: 100%;
+  height: 800px;
+  border-radius: 5px;
+  position: fixed;
+}
+
+
+/* main content flex box with spacing equally around each picture. */
+.contentsubbox {
+
+  width: 78%;
+  height: 800px;
+  border-radius: 5px;
+  background-color: rgba(000,000,000,0.6);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+
+.check {
+  font-family: "DroidSerif";
+  color: white;
+  font-size: 26px;
+  opacity: 1;
+  padding: 3px;
+  width: 160px;
+  height: 30px;
+  background-color: black;
+  border-radius: 5px;
+  z-index: 2;
+
+
+}
+
+.shop {
+  margin-top: 2%;
+
+  border: 1px solid white;
+  border-radius: 5px;
+
+
 }
